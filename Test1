@@ -15,7 +15,15 @@ public class room {
         switch(puzzle){
             case 0:
 
+        // Difficulty levels
+        //Easy 4 characters
+        //Medium 6 characters
+        //Hard 9 characters
+        
+
+
         }
+
     }
     public static void main(String[] args) {
 
