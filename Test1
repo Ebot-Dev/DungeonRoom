@@ -2,13 +2,18 @@ import java.util.Scanner;
 public class room {
     //returns the amount of health after the room
     public int dungeonRoom(int health){
-while(health > 0){
-        //Scanner Set up
+
+//Scanner Set up
         Scanner scn = new Scanner(System.in);
         }
 
-        //DRAGON CODE
 int DHP =150;
+
+
+while(health > 0){
+        
+
+        //DRAGON CODE
 
 
 
