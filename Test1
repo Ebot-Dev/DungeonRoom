@@ -1,7 +1,39 @@
 import java.util.Scanner;
+
+
+
 public class room {
+
+public static void main(String[] args) {
+
+
+}
+
+
+    public static int dungeonRoom(int health){
+
+//Scanner Set up
+        Scanner scn = new Scanner(System.in);
+
     //returns the amount of health after the room
-    public int dungeonRoom(int health){
+
+
+    //PHP
+    if (health < 15) {
+            System.out.println("You are to weak");
+            System.out.println("Luckily the dragon's blessing recovers your health to 50");
+            System.out.println("Hope now you make it out alive");
+            return health = 50;
+        } else if (health > 100) {
+            System.out.println("You are to strong");
+            System.out.println("The dragon's spell lowers your health to 50");
+            System.out.println("Hope now you make it out alive");
+            return health = 50;
+        } else {
+            System.out.println("Start fighting");
+            health = health;
+        }
+
 int DHP =150;
 
 
@@ -30,21 +62,5 @@ while(health > 0){
         else {
             System.out.println("Start fighting");
         }
-
-
 }
 
-
-
-
-
-
-    }
-    public static void main(String[] args) {
-//Scanner Set up
-        Scanner scn = new Scanner(System.in);
-        }
-
-
-    }
-}
