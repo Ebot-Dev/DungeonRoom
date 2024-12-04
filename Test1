@@ -4,26 +4,7 @@ public class room {
     public int dungeonRoom(int health){
         //Scanner Set up
         Scanner scn = new Scanner(System.in);
-
-        //Flavor Text
-        System.out.println("Welcome to the hangman room- if you fail you loose 33% of your health UwU");
-
-        /*The switch is like an if statement the reason I will use this instead of a normal if statement
-        is because it looks cleaner- */
-        int puzzle = (int)(Math.random()*30);
-
-        switch(puzzle){
-            case 0:
-
-        // Difficulty levels
-        //Easy 4 characters
-        //Medium 6 characters
-        //Hard 9 characters
-        
-
-
         }
-
     }
     public static void main(String[] args) {
 
