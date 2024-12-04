@@ -2,6 +2,8 @@ import java.util.Scanner;
 public class room {
     //returns the amount of health after the room
     public int dungeonRoom(int health){
+int DHP =150;
+
 
 while(health > 0){
         
@@ -43,7 +45,6 @@ while(health > 0){
         Scanner scn = new Scanner(System.in);
         }
 
-int DHP =150;
 
     }
 }
