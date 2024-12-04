@@ -1,3 +1,16 @@
-saiodisadoiasdl
+public class room {
+    //returns the amount of health after the room
+    public int dungeonRoom(int health){
+        System.out.println("Welcome to the hangman room- if you fail you loose 33% of your health UwU");
+        //The switch is like an if statement the reason I will use this instead of a normal if statement
+        //is because it looks cleaner-
+        int puzzle = (int)(Math.random()*30);
+        switch(puzzle){
+            case 0:
 
+        }
+    }
+    public static void main(String[] args) {
 
+    }
+}
