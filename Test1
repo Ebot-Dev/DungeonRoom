@@ -2,12 +2,13 @@ import java.util.Scanner;
 public class room {
     //returns the amount of health after the room
     public int dungeonRoom(int health){
+while(health > 0){
         //Scanner Set up
         Scanner scn = new Scanner(System.in);
         }
 
         //DRAGON CODE
-
+int DHP =150;
 
 
 
@@ -15,7 +16,21 @@ public class room {
 
         //PLAYER CODE
 
+        if (health < 15) {
+            System.out.println("You are to weak");
+            System.out.println("Luckily the dragon's blessing recovers your health to 50");
+            System.out.println("Hope now you make it out alive");
+            return health += 50;
+        }
+        else if (health < 25) {
+            System.out.println("You are to strong");
+            System.out.println("You are to strong");
+        }
+        else if (health < 50) {}
 
+
+
+}
 
 
 
