@@ -5,6 +5,23 @@ public class room {
         //Scanner Set up
         Scanner scn = new Scanner(System.in);
         }
+
+        //DRAGON CODE
+
+
+
+
+
+
+        //PLAYER CODE
+
+
+
+
+
+
+
+
     }
     public static void main(String[] args) {
 
