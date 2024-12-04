@@ -1,10 +1,17 @@
+import java.util.Scanner;
 public class room {
     //returns the amount of health after the room
     public int dungeonRoom(int health){
+        //Scanner Set up
+        Scanner scn = new Scanner(System.in);
+
+        //Flavor Text
         System.out.println("Welcome to the hangman room- if you fail you loose 33% of your health UwU");
-        //The switch is like an if statement the reason I will use this instead of a normal if statement
-        //is because it looks cleaner-
+
+        /*The switch is like an if statement the reason I will use this instead of a normal if statement
+        is because it looks cleaner- */
         int puzzle = (int)(Math.random()*30);
+
         switch(puzzle){
             case 0:
 
