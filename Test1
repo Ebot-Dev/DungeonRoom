@@ -1,70 +1,50 @@
 import java.util.Scanner;
-
-
-
 public class room {
-
-public static void main(String[] args) {
-
-
-}
-
-
-    public static int dungeonRoom(int health){
-
-//Scanner Set up
-        Scanner scn = new Scanner(System.in);
-
     //returns the amount of health after the room
+    public static int dungeonRoom(int health) {
+
+    //Scanner Set up
+        Scanner scn = new Scanner(System.in);
+        int DHP = 150;
 
 
-    //PHP
-    if (health < 15) {
-            System.out.println("You are to weak");
-            System.out.println("Luckily the dragon's blessing recovers your health to 50");
-            System.out.println("Hope now you make it out alive");
-            return health = 50;
-        } else if (health > 100) {
-            System.out.println("You are to strong");
-            System.out.println("The dragon's spell lowers your health to 50");
-            System.out.println("Hope now you make it out alive");
-            return health = 50;
-        } else {
-            System.out.println("Start fighting");
-            health = health;
+        while (health > 0) {
+
+            int roll = (int) (Math.random() * 20);
+            String attack;
+            int damage = 0;
+
+            if (roll < 9) {
+                attack = "Bite";
+            } else if (roll < 14) {
+                attack = "Claw";
+            } else if (roll < 17) {
+                attack = "Tail whip";
+            } else {
+                attack = "Fireball";
+            }
+
+            switch (attack) {
+                case "Bite":
+                    damage = 8;
+                    break;
+                case "Claw":
+                    damage = 10;
+                    break;
+                case "Tail whip":
+                    damage = 7;
+                    break;
+                case "Fireball":
+                    damage = 17;
+                    break;
+            }
+            health -= damage;
+
+            System.out.println("The dragon used " + attack + " doing " + damage + " damage.");
         }
-
-int DHP =150;
-
-
-while(health > 0){
-        
-
-        //DRAGON CODE
-
-
-
-
-
-        //PLAYER CODE
-
-      
-            if (health < 15) {
-                System.out.println("You are to weak");
-                System.out.println("Luckily the dragon's blessing recovers your health to 50");
-                System.out.println("Hope now you make it out alive");
-                health = 50;
-            }
-            else if (health > 100) {
-                System.out.println("You are to strong");
-                System.out.println("");
-                health = 50;
-            }
-            else {
-                System.out.println("Start fighting");
-                health = health;
-            }
+        return health;
+    }
+    public static void main(String[] args) {
+        dungeonRoom(1000);
+    }
 }
-}
-}
-
