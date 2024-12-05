@@ -59,7 +59,7 @@ public class room {
             System.out.println("The dragon used " + attack + " doing " + damage + " damage.");
         }
 
-        int rounds = scn.nextInt()
+        int rounds = scn.nextInt();
                     int health = 50;
                     int mana = 10; // Initial mana
                     int spellCost = 2;
