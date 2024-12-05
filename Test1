@@ -48,19 +48,23 @@ while(health > 0){
 
         //PLAYER CODE
 
-       if (health < 15) {
-            System.out.println("You are to weak");
-            System.out.println("Luckily the dragon's blessing recovers your health to 50");
-            System.out.println("Hope now you make it out alive");
-            return health = 50;
-        }
-        else if (health > 100) {
-            System.out.println("You are to strong");
-            System.out.println("");
-            return health = 50;
-        }
-        else {
-            System.out.println("Start fighting");
-        }
+      
+            if (health < 15) {
+                System.out.println("You are to weak");
+                System.out.println("Luckily the dragon's blessing recovers your health to 50");
+                System.out.println("Hope now you make it out alive");
+                health = 50;
+            }
+            else if (health > 100) {
+                System.out.println("You are to strong");
+                System.out.println("");
+                health = 50;
+            }
+            else {
+                System.out.println("Start fighting");
+                health = health;
+            }
+}
+}
 }
 
