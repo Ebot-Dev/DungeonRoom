@@ -5,6 +5,22 @@ public class room {
 
     //Scanner Set up
         Scanner scn = new Scanner(System.in);
+        if (health < 15) {
+                System.out.println("You are to weak");
+                System.out.println("Luckily the dragon's blessing recovers your health to 50");
+                System.out.println("Hope now you make it out alive");
+                health = 50;
+            }
+            else if (health > 100) {
+                System.out.println("You are to strong");
+                System.out.println("You now have 50 HP");
+                health = 50;
+            }
+            else {
+                System.out.println("Start fighting");
+            }
+
+            System.out.println("ur hp is" + health);
         int DHP = 150;
 
 
@@ -42,6 +58,26 @@ public class room {
 
             System.out.println("The dragon used " + attack + " doing " + damage + " damage.");
         }
+
+                    int hp = 50;
+                    int mana = 10; // Initial mana
+                    int spellCost = 2;
+                    int spellDamage = 1;
+                    int rounds = 10; // Number of rounds
+
+                    for (int i = 1; i <= rounds; i++) {
+                        if (mana >= spellCost) {
+                            hp -= spellDamage;
+                            mana -= spellCost;
+                            System.out.println("Round " + i + ": Cast spell, HP: " + hp + ", Mana: " + mana);
+                        } else {
+                            System.out.println("Round " + i + ": Not enough mana to cast spell, HP: " + hp + ", Mana: " + mana);
+                        }
+                        mana += 1; // Gain 1 mana after each round
+                    }
+
+
+
         return health;
     }
     public static void main(String[] args) {
