@@ -63,27 +63,28 @@ public class room {
             System.out.println("The dragon used " + attack + " doing " + damage + " damage.");
             System.out.println("You now have " + health + " health.");
 
-        System.out.println("Choose your attack - Pick an int");
-        System.out.println("(1)sword    (2)fire attack   (3)water attack    (4)Wind");
-        playerAttk = scn.nextInt();
-        switch (playerAttk) {
-            case 1:
-                DHP -= 10;
-                break;
-            case 2:
-                DHP -= 150;
-                break;
-            case 3:
-                DHP -= 15;
-                break;
-            case 4:
-                DHP -= 15;
-                break;
+            System.out.println("Choose your attack - Pick an int");
+            System.out.println("(1)sword    (2)fire attack   (3)water attack    (4)Wind");
+            playerAttk = scn.nextInt();
+            switch (playerAttk) {
+                case 1:
+                    DHP -= 25;
+                    break;
+                case 2:
+                    DHP -= 50;
+                    break;
+                case 3:
+                    DHP -= 35;
+                    break;
+                case 4:
+                    DHP -= 0;
+                    System.out.println("A sudden breeze enters the room... you have done no damage. (it is just wind after all¯\\_(ツ)_/¯)");
+                    break;
 
-            default:
-                break;
-        }
-        System.out.println("The dragon has " + DHP + " health.");
+                default:
+                    break;
+            }
+            System.out.println("The dragon has " + DHP + " health.");
             /*
             if (mana >= spellCost) {
                 DHP -= spellDamage;
